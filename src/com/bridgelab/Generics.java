@@ -10,8 +10,10 @@ public class Generics {
                 max = t;
             }
         }
-
-        System.out.println("Maximum number is :: " +max);
+        printMax(max);
+    }
+    public static <T> void printMax(T max){
+        System.out.println("Maximum number is :: " + max);
     }
     public static void main(String[] args) {
         bigger(10,20,3,4,26);
