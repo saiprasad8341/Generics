@@ -5,18 +5,18 @@ import java.util.Scanner;
 public class Generics {
     public static void main(String[] args) {
         System.out.println("Welcome to the Generics of Maximum Problem");
-        float a,b,c;
+        String a,b,c;
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter a value :: ");
-        a = sc.nextFloat();
+        a = sc.next();
         System.out.print("Enter b value :: ");
-        b = sc.nextFloat();
+        b = sc.next();
         System.out.print("Enter c value :: ");
-        c = sc.nextFloat();
+        c = sc.next();
 
-        if (a > b && a > c){
+        if (a.length() > b.length() && a.length() > c.length()){
             System.out.println(a+" is bigger");
-        } else if (b > a && b > c) {
+        } else if (b.length() > c.length()) {
             System.out.println(b+ " is bigger");
         }else {
             System.out.println(c+ " is bigger");
